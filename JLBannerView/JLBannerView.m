@@ -78,8 +78,8 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 
     if (self.pageControl.hidden == NO) {
         
-        if ([self.dataSource respondsToSelector:@selector(frameForPageControlInBanner:)]) {
-            self.pageControl.frame = [self.dataSource frameForPageControlInBanner:self];
+        if ([self.dataSource respondsToSelector:@selector(frameForPageControlInBannerView:)]) {
+            self.pageControl.frame = [self.dataSource frameForPageControlInBannerView:self];
         }
         else{
             self.pageControl.frame = CGRectMake(0,
@@ -250,8 +250,8 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 #pragma mark - getters
 
 - (NSInteger)itemCount {
-    if ([self.dataSource respondsToSelector:@selector(numberOfItemsInBanner:)]) {
-        return [self.dataSource numberOfItemsInBanner:self];
+    if ([self.dataSource respondsToSelector:@selector(numberOfItemsInBannerView:)]) {
+        return [self.dataSource numberOfItemsInBannerView:self];
     }
     return 0;
 }

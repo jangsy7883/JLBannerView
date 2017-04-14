@@ -14,6 +14,7 @@
 		EFFE13B31E9F7E4900FC8D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13B21E9F7E4900FC8D65 /* Assets.xcassets */; };
 		EFFE13B61E9F7E4900FC8D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13B41E9F7E4900FC8D65 /* LaunchScreen.storyboard */; };
 		EFFE13C01E9F7F4700FC8D65 /* JLBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13BF1E9F7F4700FC8D65 /* JLBannerView.m */; };
+		EFFE13C21EA0673A00FC8D65 /* JLBannerView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EFFE13B71E9F7E4900FC8D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFFE13BE1E9F7F4700FC8D65 /* JLBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBannerView.h; sourceTree = "<group>"; };
 		EFFE13BF1E9F7F4700FC8D65 /* JLBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBannerView.m; sourceTree = "<group>"; };
+		EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JLBannerView.podspec; path = ../JLBannerView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		EFFE139A1E9F7E4900FC8D65 = {
 			isa = PBXGroup;
 			children = (
+				EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */,
 				EFFE13BD1E9F7F4700FC8D65 /* JLBannerView */,
 				EFFE13A51E9F7E4900FC8D65 /* JLBannerViewDemo */,
 				EFFE13A41E9F7E4900FC8D65 /* Products */,
@@ -165,6 +168,7 @@
 				EFFE13B61E9F7E4900FC8D65 /* LaunchScreen.storyboard in Resources */,
 				EFFE13B31E9F7E4900FC8D65 /* Assets.xcassets in Resources */,
 				EFFE13B11E9F7E4900FC8D65 /* Main.storyboard in Resources */,
+				EFFE13C21EA0673A00FC8D65 /* JLBannerView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,11 +30,11 @@
 @protocol JLBannerViewDataSource <NSObject>
 
 @required
-- (NSInteger)numberOfItemsInBanner:(JLBannerView *)banner;
+- (NSInteger)numberOfItemsInBannerView:(JLBannerView *)bannerView;
 - (UIView *)bannerView:(JLBannerView *)bannerView reusableItemView:(UIView *)reusableItemView forItemAtIndex:(NSInteger)index;
 
 @optional
-- (CGRect)frameForPageControlInBanner:(JLBannerView *)banner;
+- (CGRect)frameForPageControlInBannerView:(JLBannerView *)bannerView;
 
 @end
 
