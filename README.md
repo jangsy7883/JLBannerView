@@ -19,7 +19,7 @@ pod 'JLBannerView'
 #import <JLBannerView/JLBannerView.h>
 ```
 
-**Initialize**
+**Code Example**
 ```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
