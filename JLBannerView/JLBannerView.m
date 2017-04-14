@@ -125,6 +125,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger index = [self indexAtIndexPath:indexPath];
     JLBannerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BannerCellReuseIdentifier forIndexPath:indexPath];
+    cell.contentView.clipsToBounds = YES;
     
     if ([self.dataSource respondsToSelector:@selector(bannerView:reusableItemView:forItemAtIndex:)]) {
         cell.itemView = [self.dataSource bannerView:self reusableItemView:cell.itemView forItemAtIndex:index];

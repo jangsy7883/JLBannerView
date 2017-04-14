@@ -12,16 +12,14 @@
 
 @interface JLBannerView : UIView
 
-@property (nonatomic, assign) IBInspectable BOOL shouldLoop;
-@property (nonatomic, assign) IBInspectable BOOL autoScrolling;
-@property (nonatomic, assign) IBInspectable CGFloat scrollInterval;
+@property (nonatomic, assign) IBInspectable BOOL shouldLoop; // default is YES
+@property (nonatomic, assign) IBInspectable BOOL autoScrolling; // default is NO
+@property (nonatomic, assign) IBInspectable CGFloat scrollInterval; // default is 5
 
 @property (nonatomic, strong, readonly) UIPageControl *pageControl;
 
 @property (nonatomic, weak) IBOutlet id<JLBannerViewDataSource> dataSource;
 @property (nonatomic, weak) IBOutlet id<JLBannerViewDelegate> delegate;
-
-@property (assign, nonatomic) NSUInteger currentSelectedPage;
 
 - (void)reloadData;
 
