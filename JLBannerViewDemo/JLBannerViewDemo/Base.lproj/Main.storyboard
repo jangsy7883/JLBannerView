@@ -32,7 +32,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="scrollInterval">
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoScrolling" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoScrolling" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Msk-Bc-j8h"/>
