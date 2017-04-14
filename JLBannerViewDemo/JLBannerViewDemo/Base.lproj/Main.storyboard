@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TLD-BO-4r5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Data Source-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5F4-jT-0hR" customClass="JLBannerView">
+                                <rect key="frame" x="0.0" y="233.5" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="I1h-6n-Ul8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldLoop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollInterval">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoScrolling" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Msk-Bc-j8h"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="js5-19-y1H"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5F4-jT-0hR" secondAttribute="trailing" id="71o-iL-E6W"/>
+                            <constraint firstItem="5F4-jT-0hR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Soc-qn-xid"/>
+                            <constraint firstItem="5F4-jT-0hR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ViJ-6y-67n"/>
+                            <constraint firstItem="5F4-jT-0hR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qQD-Oe-qoo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="5F4-jT-0hR" id="Ulw-nG-Bec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="558"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h2Y-3V-sGl">
+            <objects>
+                <navigationController id="TLD-BO-4r5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fz8-kr-yOA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="P6p-gD-wah" kind="relationship" relationship="rootViewController" id="BaZ-PT-3PJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tg2-Fg-9lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-951" y="559"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nQk-lJ-1gs">
+            <objects>
+                <viewController id="P6p-gD-wah" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Td-KA-8N7"/>
+                        <viewControllerLayoutGuide type="bottom" id="IF1-eu-Yhw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cfb-17-xN2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h0-oW-8Ao">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Hfo-mf-TSe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0h0-oW-8Ao" firstAttribute="centerY" secondItem="Cfb-17-xN2" secondAttribute="centerY" id="ZRd-iV-QbE"/>
+                            <constraint firstItem="0h0-oW-8Ao" firstAttribute="centerX" secondItem="Cfb-17-xN2" secondAttribute="centerX" id="rpm-tC-gij"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cqL-Gi-hCJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfz-Be-bh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="558"/>
+        </scene>
+    </scenes>
+</document>
