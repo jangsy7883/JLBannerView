@@ -19,7 +19,7 @@ pod 'JLBannerView'
 #import <JLBannerView/JLBannerView.h>
 ```
 
-**Initialize**
+**Code Example**
 ```objc
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,15 +56,19 @@ pod 'JLBannerView'
 ```
 
 **loop**
-@property (nonatomic, assign) IBInspectable BOOL shouldLoop; // default is YES
 ```objc
+@property (nonatomic, assign) IBInspectable BOOL shouldLoop; // default is YES
 ```
 
 **auto scrolling**
+```objc
 @property (nonatomic, assign) IBInspectable BOOL autoScrolling; // default is NO
 @property (nonatomic, assign) IBInspectable CGFloat scrollInterval; // default is 5
-```objc
+
 ```
+
+## Todo
+- [ ] Landscape mode support
 
 ## Licence
 The MIT License (MIT)

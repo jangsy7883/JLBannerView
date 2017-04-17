@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF48569D1EA0B7120034E841 /* JLBannerView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EF48569C1EA0B7120034E841 /* JLBannerView.podspec */; };
 		EFFE13A81E9F7E4900FC8D65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13A71E9F7E4900FC8D65 /* main.m */; };
 		EFFE13AB1E9F7E4900FC8D65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13AA1E9F7E4900FC8D65 /* AppDelegate.m */; };
 		EFFE13AE1E9F7E4900FC8D65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13AD1E9F7E4900FC8D65 /* ViewController.m */; };
@@ -15,11 +14,11 @@
 		EFFE13B31E9F7E4900FC8D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13B21E9F7E4900FC8D65 /* Assets.xcassets */; };
 		EFFE13B61E9F7E4900FC8D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13B41E9F7E4900FC8D65 /* LaunchScreen.storyboard */; };
 		EFFE13C01E9F7F4700FC8D65 /* JLBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13BF1E9F7F4700FC8D65 /* JLBannerView.m */; };
+		EFFE13C21EA0673A00FC8D65 /* JLBannerView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A89716FA9D18A09C839040DC /* Pods_JLBannerViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLBannerViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF48569C1EA0B7120034E841 /* JLBannerView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JLBannerView.podspec; path = ../JLBannerView.podspec; sourceTree = "<group>"; };
 		EFFE13A31E9F7E4900FC8D65 /* JLBannerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLBannerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFE13A71E9F7E4900FC8D65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFFE13A91E9F7E4900FC8D65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		EFFE13B71E9F7E4900FC8D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFFE13BE1E9F7F4700FC8D65 /* JLBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBannerView.h; sourceTree = "<group>"; };
 		EFFE13BF1E9F7F4700FC8D65 /* JLBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBannerView.m; sourceTree = "<group>"; };
+		EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JLBannerView.podspec; path = ../JLBannerView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 		EFFE139A1E9F7E4900FC8D65 = {
 			isa = PBXGroup;
 			children = (
-				EF48569C1EA0B7120034E841 /* JLBannerView.podspec */,
+				EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */,
 				EFFE13BD1E9F7F4700FC8D65 /* JLBannerView */,
 				EFFE13A51E9F7E4900FC8D65 /* JLBannerViewDemo */,
 				EFFE13A41E9F7E4900FC8D65 /* Products */,
@@ -168,7 +168,7 @@
 				EFFE13B61E9F7E4900FC8D65 /* LaunchScreen.storyboard in Resources */,
 				EFFE13B31E9F7E4900FC8D65 /* Assets.xcassets in Resources */,
 				EFFE13B11E9F7E4900FC8D65 /* Main.storyboard in Resources */,
-				EF48569D1EA0B7120034E841 /* JLBannerView.podspec in Resources */,
+				EFFE13C21EA0673A00FC8D65 /* JLBannerView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

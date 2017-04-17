@@ -59,25 +59,26 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     _autoScrolling = NO;
 }
 
-#pragma mark - layout 
+#pragma mark - layout
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-
+    
     //CollectionView
     if (self.collectionView.superview == nil) {
+        self.collectionView.frame = self.bounds;
         [self addSubview:self.collectionView];
         [self reloadData];
     }
-    self.collectionView.frame = self.bounds;
-
+    else {
+        self.collectionView.frame = self.bounds;
+    }
+    
     //PageControl
     if (self.pageControl.superview == nil) {
         [self addSubview:self.pageControl];
     }
-
     if (self.pageControl.hidden == NO) {
-        
         if ([self.dataSource respondsToSelector:@selector(frameForPageControlInBannerView:)]) {
             self.pageControl.frame = [self.dataSource frameForPageControlInBannerView:self];
         }
@@ -93,7 +94,6 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 #pragma mark - reload
 
 - (void)reloadData {
-    
     if (self.collectionView.superview && self.itemCount > 0) {
         self.pageControl.numberOfPages = self.itemCount;
         
@@ -104,6 +104,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
             if (self.shouldLoop) {
                 [self.collectionView setContentOffset:CGPointMake(CGRectGetWidth(self.collectionView.bounds), 0) animated:NO];
             }
+            
             if (_autoScrolling) {
                 [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
             }
@@ -114,7 +115,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 #pragma mark - UICollectionViewDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return self.collectionView.frame.size;
+    return self.collectionView.bounds.size;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -153,7 +154,6 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         CGPoint contentOffset = scrollView.contentOffset;
         CGFloat pageWidth = CGRectGetWidth(scrollView.bounds);
         CGFloat offset = pageWidth * self.itemCount;
-        
         if (contentOffset.x < pageWidth && _lastContentOffsetX > contentOffset.x) {
             _lastContentOffsetX = contentOffset.x + offset;
             scrollView.contentOffset = (CGPoint){_lastContentOffsetX, contentOffset.y};
@@ -231,7 +231,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 - (void)setAutoScrolling:(BOOL)autoScrolling {
     if (_autoScrolling != autoScrolling) {
         _autoScrolling = autoScrolling;
-
+        
         if (_autoScrolling && self.collectionView.visibleCells.count > 0) {
             [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
         }
