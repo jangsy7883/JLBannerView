@@ -78,8 +78,8 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 
     if (self.pageControl.hidden == NO) {
         
-        if ([self.dataSource respondsToSelector:@selector(frameForPageControlInBanner:)]) {
-            self.pageControl.frame = [self.dataSource frameForPageControlInBanner:self];
+        if ([self.dataSource respondsToSelector:@selector(frameForPageControlInBannerView:)]) {
+            self.pageControl.frame = [self.dataSource frameForPageControlInBannerView:self];
         }
         else{
             self.pageControl.frame = CGRectMake(0,
@@ -207,7 +207,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 }
 
 - (void)autoScrollBannerView {
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(autoScrollBannerView) object:nil];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:_cmd object:nil];
 
     if (self.itemCount > 1 && self.collectionView.visibleCells.count > 0) {
         CGFloat offestY = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.bounds);
@@ -233,7 +233,10 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         _autoScrolling = autoScrolling;
 
         if (_autoScrolling && self.collectionView.visibleCells.count > 0) {
-            [self performSelector:_cmd withObject:nil afterDelay:self.scrollInterval];
+            [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
+        }
+        else{
+            [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(autoScrollBannerView) object:nil];
         }
     }
 }
@@ -243,7 +246,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         _scrollInterval = scrollInterval;
         
         if (_autoScrolling && self.collectionView.visibleCells.count > 0) {
-            [self performSelector:_cmd withObject:nil afterDelay:self.scrollInterval];
+            [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
         }
     }
 }
@@ -251,8 +254,8 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 #pragma mark - getters
 
 - (NSInteger)itemCount {
-    if ([self.dataSource respondsToSelector:@selector(numberOfItemsInBanner:)]) {
-        return [self.dataSource numberOfItemsInBanner:self];
+    if ([self.dataSource respondsToSelector:@selector(numberOfItemsInBannerView:)]) {
+        return [self.dataSource numberOfItemsInBannerView:self];
     }
     return 0;
 }

@@ -25,7 +25,7 @@
 
 #pragma mark - JLBannerViewDataSource
 
-- (NSInteger)numberOfItemsInBanner:(JLBannerView *)banner {
+- (NSInteger)numberOfItemsInBannerView:(JLBannerView *)bannerView {
     return self.items.count;
 }
 
@@ -39,11 +39,10 @@
     }
     
     label.text = [NSString stringWithFormat:@"%zd",index];
-
     return label;
 }
 
-//- (CGRect)frameForPageControlInBanner:(JLBannerView *)banner {
+//- (CGRect)frameForPageControlInBannerView:(JLBannerView *)bannerView {
 //    return
 //}
 
