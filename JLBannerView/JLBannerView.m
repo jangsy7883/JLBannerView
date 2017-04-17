@@ -207,8 +207,8 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 }
 
 - (void)autoScrollBannerView {
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(autoScrollBannerView) object:nil];
-    
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:_cmd object:nil];
+
     if (self.itemCount > 1 && self.collectionView.visibleCells.count > 0) {
         CGFloat offestY = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.bounds);
         [self.collectionView setContentOffset:CGPointMake(offestY, 0) animated:YES];
@@ -233,7 +233,10 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         _autoScrolling = autoScrolling;
         
         if (_autoScrolling && self.collectionView.visibleCells.count > 0) {
-            [self performSelector:_cmd withObject:nil afterDelay:self.scrollInterval];
+            [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
+        }
+        else{
+            [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(autoScrollBannerView) object:nil];
         }
     }
 }
@@ -243,7 +246,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         _scrollInterval = scrollInterval;
         
         if (_autoScrolling && self.collectionView.visibleCells.count > 0) {
-            [self performSelector:_cmd withObject:nil afterDelay:self.scrollInterval];
+            [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
         }
     }
 }

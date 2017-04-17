@@ -39,9 +39,12 @@
     }
     
     label.text = [NSString stringWithFormat:@"%zd",index];
-
     return label;
 }
+
+//- (CGRect)frameForPageControlInBannerView:(JLBannerView *)bannerView {
+//    return
+//}
 
 #pragma mark - JLBannerViewDelegate
 
