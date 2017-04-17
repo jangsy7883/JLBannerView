@@ -290,6 +290,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         _pageControl = [[UIPageControl alloc] init];
         _pageControl.userInteractionEnabled = NO;
         _pageControl.autoresizingMask = UIViewAutoresizingNone;
+        _pageControl.hidesForSinglePage = YES;
     }
     return _pageControl;
 }
