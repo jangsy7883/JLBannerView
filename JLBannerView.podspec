@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JLBannerView"
-  s.version      = "1.6"
+  s.version      = "1.7"
   s.summary      = "JLBannerView"
   s.homepage     = "https://github.com/jangsy7883/JLBannerView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
