@@ -12,8 +12,9 @@
 
 @interface JLBannerView : UIView
 
-@property (nonatomic, assign) IBInspectable BOOL shouldLoop; // default is YES
-@property (nonatomic, assign) IBInspectable BOOL autoScrolling; // default is NO
+@property (nonatomic, assign, getter = isShouldLoop) IBInspectable BOOL shouldLoop; // default is YES
+@property (nonatomic, assign, getter = isAutoScrolling) IBInspectable BOOL autoScrolling; // default is NO
+@property (nonatomic, assign, getter = isVisiblePageControl) IBInspectable BOOL visiblePageControl; // default is YES
 @property (nonatomic, assign) IBInspectable CGFloat scrollInterval; // default is 5
 
 @property (nonatomic, strong, readonly) UIPageControl *pageControl;
