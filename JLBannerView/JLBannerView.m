@@ -119,7 +119,10 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.shouldLoop ? self.itemCount + 2 : self.itemCount;
+    if (self.itemCount > 0) {
+        return self.shouldLoop ? self.itemCount + 2 : self.itemCount;
+    }
+    return 0;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
