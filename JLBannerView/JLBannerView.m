@@ -57,6 +57,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     _scrollInterval = 5;
     _shouldLoop = YES;
     _autoScrolling = NO;
+    _visiblePageControl = YES;
 }
 
 #pragma mark - layout
@@ -75,10 +76,14 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     }
     
     //PageControl
-    if (self.pageControl.superview == nil) {
+    if (_visiblePageControl && self.pageControl.superview == nil) {
         [self addSubview:self.pageControl];
     }
-    if (self.pageControl.hidden == NO) {
+    else if (!_visiblePageControl && self.pageControl.superview) {
+        [self.pageControl removeFromSuperview];
+    }
+    
+    if (self.pageControl.superview) {
         if ([self.dataSource respondsToSelector:@selector(frameForPageControlInBannerView:)]) {
             self.pageControl.frame = [self.dataSource frameForPageControlInBannerView:self];
         }
@@ -250,6 +255,19 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         
         if (_autoScrolling && self.collectionView.visibleCells.count > 0) {
             [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
+        }
+    }
+}
+
+-(void)setVisiblePageControl:(BOOL)visiblePageControl {
+    if (!_visiblePageControl == visiblePageControl) {
+        _visiblePageControl = visiblePageControl;
+     
+        if (_visiblePageControl && self.pageControl.superview == nil) {
+            [self addSubview:self.pageControl];
+        }
+        else if (!_visiblePageControl && self.pageControl.superview) {
+            [self.pageControl removeFromSuperview];
         }
     }
 }
