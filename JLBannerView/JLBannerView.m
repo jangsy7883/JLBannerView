@@ -259,7 +259,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     }
 }
 
--(void)setVisiblePageControl:(BOOL)visiblePageControl {
+- (void)setVisiblePageControl:(BOOL)visiblePageControl {
     if (_visiblePageControl != visiblePageControl) {
         _visiblePageControl = visiblePageControl;
      
