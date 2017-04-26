@@ -2,8 +2,8 @@
 //  JLBannerView.h
 //  JLBannerView
 //
-//  Created by Woody on 2017. 4. 13..
-//  Copyright © 2017년 Goodoc. All rights reserved.
+//  Created by Jangsy7883 on 2017. 4. 13..
+//  Copyright © 2017년 Studio. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

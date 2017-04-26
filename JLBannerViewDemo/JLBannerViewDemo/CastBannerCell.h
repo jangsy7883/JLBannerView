@@ -2,7 +2,7 @@
 //  CollectionViewCell.h
 //  JLBannerViewDemo
 //
-//  Created by Woody on 2017. 4. 26..
+//  Created by Jangsy7883 on 2017. 4. 26..
 //  Copyright © 2017년 Studio. All rights reserved.
 //
 
