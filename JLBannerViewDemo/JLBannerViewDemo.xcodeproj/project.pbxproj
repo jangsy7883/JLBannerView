@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFD149821EB044A100CEE14A /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD149811EB044A100CEE14A /* CollectionViewController.m */; };
+		EFD149851EB044B000CEE14A /* CastBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD149841EB044B000CEE14A /* CastBannerCell.m */; };
 		EFFE13A81E9F7E4900FC8D65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13A71E9F7E4900FC8D65 /* main.m */; };
 		EFFE13AB1E9F7E4900FC8D65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13AA1E9F7E4900FC8D65 /* AppDelegate.m */; };
-		EFFE13AE1E9F7E4900FC8D65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13AD1E9F7E4900FC8D65 /* ViewController.m */; };
 		EFFE13B11E9F7E4900FC8D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13AF1E9F7E4900FC8D65 /* Main.storyboard */; };
 		EFFE13B31E9F7E4900FC8D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13B21E9F7E4900FC8D65 /* Assets.xcassets */; };
 		EFFE13B61E9F7E4900FC8D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13B41E9F7E4900FC8D65 /* LaunchScreen.storyboard */; };
@@ -19,12 +20,14 @@
 
 /* Begin PBXFileReference section */
 		A89716FA9D18A09C839040DC /* Pods_JLBannerViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLBannerViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD149801EB044A100CEE14A /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		EFD149811EB044A100CEE14A /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		EFD149831EB044B000CEE14A /* CastBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastBannerCell.h; sourceTree = "<group>"; };
+		EFD149841EB044B000CEE14A /* CastBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastBannerCell.m; sourceTree = "<group>"; };
 		EFFE13A31E9F7E4900FC8D65 /* JLBannerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLBannerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFE13A71E9F7E4900FC8D65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFFE13A91E9F7E4900FC8D65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFFE13AA1E9F7E4900FC8D65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EFFE13AC1E9F7E4900FC8D65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EFFE13AD1E9F7E4900FC8D65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EFFE13B01E9F7E4900FC8D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFFE13B21E9F7E4900FC8D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFFE13B51E9F7E4900FC8D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,8 +80,10 @@
 			children = (
 				EFFE13A91E9F7E4900FC8D65 /* AppDelegate.h */,
 				EFFE13AA1E9F7E4900FC8D65 /* AppDelegate.m */,
-				EFFE13AC1E9F7E4900FC8D65 /* ViewController.h */,
-				EFFE13AD1E9F7E4900FC8D65 /* ViewController.m */,
+				EFD149801EB044A100CEE14A /* CollectionViewController.h */,
+				EFD149811EB044A100CEE14A /* CollectionViewController.m */,
+				EFD149831EB044B000CEE14A /* CastBannerCell.h */,
+				EFD149841EB044B000CEE14A /* CastBannerCell.m */,
 				EFFE13AF1E9F7E4900FC8D65 /* Main.storyboard */,
 				EFFE13B21E9F7E4900FC8D65 /* Assets.xcassets */,
 				EFFE13B41E9F7E4900FC8D65 /* LaunchScreen.storyboard */,
@@ -179,9 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD149851EB044B000CEE14A /* CastBannerCell.m in Sources */,
 				EFFE13C01E9F7F4700FC8D65 /* JLBannerView.m in Sources */,
-				EFFE13AE1E9F7E4900FC8D65 /* ViewController.m in Sources */,
 				EFFE13AB1E9F7E4900FC8D65 /* AppDelegate.m in Sources */,
+				EFD149821EB044A100CEE14A /* CollectionViewController.m in Sources */,
 				EFFE13A81E9F7E4900FC8D65 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SCHCN3R38K;
 				INFOPLIST_FILE = JLBannerViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jangsy7883.JLBannerViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -316,6 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SCHCN3R38K;
 				INFOPLIST_FILE = JLBannerViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jangsy7883.JLBannerViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
