@@ -17,6 +17,8 @@
 @property (nonatomic, assign, getter = isVisiblePageControl) IBInspectable BOOL visiblePageControl; // default is YES
 @property (nonatomic, assign) IBInspectable CGFloat scrollInterval; // default is 5
 
+@property (nonatomic, readonly) NSUInteger currentIndex;
+
 @property (nonatomic, strong, readonly) UIPageControl *pageControl;
 
 @property (nonatomic, weak) IBOutlet id<JLBannerViewDataSource> dataSource;

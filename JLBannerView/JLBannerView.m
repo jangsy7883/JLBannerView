@@ -21,6 +21,9 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong) UIPageControl *pageControl;
+@property (nonatomic, assign) NSUInteger currentIndex;
+
+@property (nonatomic, assign) NSUInteger realIndex;
 
 @property (nonatomic, readonly) NSInteger itemCount;
 @property (nonatomic,assign) CGFloat lastContentOffsetX;
@@ -58,6 +61,8 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     _shouldLoop = YES;
     _autoScrolling = NO;
     _visiblePageControl = YES;
+    _currentIndex = NSNotFound;
+    _realIndex = NSNotFound;
 }
 
 #pragma mark - layout
@@ -72,7 +77,11 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         [self reloadData];
     }
     else {
-        self.collectionView.frame = self.bounds;
+        if (!CGRectEqualToRect(self.collectionView.frame, self.bounds) ) {
+            self.collectionView.frame = self.bounds;
+            [self.collectionView reloadData];
+            [self layoutContentOffset];
+        }
     }
     
     //PageControl
@@ -96,6 +105,14 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     }
 }
 
+- (void)layoutContentOffset {
+    if (_realIndex == NSNotFound) {
+        _realIndex = (self.shouldLoop) ? 1 : 0;
+    }
+    
+    [self.collectionView setContentOffset:CGPointMake(CGRectGetWidth(self.collectionView.bounds)*_realIndex, 0) animated:NO];
+}
+
 #pragma mark - reload
 
 - (void)reloadData {
@@ -106,14 +123,15 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         [self.collectionView reloadData];
         
         if (self.itemCount > 1) {
-            if (self.shouldLoop) {
-                [self.collectionView setContentOffset:CGPointMake(CGRectGetWidth(self.collectionView.bounds), 0) animated:NO];
-            }
+            [self layoutContentOffset];
             
             if (_autoScrolling) {
+                [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(autoScrollBannerView) object:nil];
                 [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
             }
         }
+        
+        [self scrollViewDidScroll:self.collectionView];
     }
 }
 
@@ -175,8 +193,12 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         }
         
         //PAGE CONTROL
+        _realIndex = lround(_lastContentOffsetX/pageWidth);
+        
         NSInteger index = MAX(0, lround(_lastContentOffsetX/pageWidth)-1);
-        if (self.pageControl.currentPage != index) {
+        if (_currentIndex != index) {
+            
+            _currentIndex = index;
             self.pageControl.currentPage = index;
             
             if ([self.delegate respondsToSelector:@selector(bannerView:didScrollToIndex:)]) {
@@ -214,9 +236,11 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     return indexPath.row;
 }
 
+#pragma mark - auto scroll
+
 - (void)autoScrollBannerView {
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:_cmd object:nil];
-
+    
     if (self.itemCount > 1 && self.collectionView.visibleCells.count > 0) {
         CGFloat offestY = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.bounds);
         [self.collectionView setContentOffset:CGPointMake(offestY, 0) animated:YES];
@@ -262,7 +286,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 - (void)setVisiblePageControl:(BOOL)visiblePageControl {
     if (_visiblePageControl != visiblePageControl) {
         _visiblePageControl = visiblePageControl;
-     
+        
         if (_visiblePageControl && self.pageControl.superview == nil) {
             [self addSubview:self.pageControl];
         }

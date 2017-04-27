@@ -11,10 +11,10 @@
 @implementation CastBannerCell
 
 - (void)layoutSubviews {
-    self.bannerView.frame = self.contentView.bounds;
-    
+    self.bannerView.frame = self.bounds;
+
     if (self.bannerView.superview == nil) {
-        [self.contentView addSubview:self.bannerView];
+        [self addSubview:self.bannerView];
         [self.bannerView reloadData];
     }
 }
