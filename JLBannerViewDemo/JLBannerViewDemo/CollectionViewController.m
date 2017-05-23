@@ -74,10 +74,10 @@ static NSString * const reuseIdentifier = @"BannerCell";
 #pragma mark - JLBannerViewDelegate
 
 - (void)bannerView:(JLBannerView *)bannerView didSelectItemAtIndex:(NSInteger)index {
-    NSLog(@"selected %zd",index);
+//    NSLog(@"selected %zd",index);
 }
 - (void)bannerView:(JLBannerView *)bannerView didScrollToIndex:(NSInteger)index {
-    NSLog(@"scroll %zd",index);
+//    NSLog(@"scroll %zd",index);
 }
 
 @end
