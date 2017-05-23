@@ -240,11 +240,10 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 
 - (void)autoScrollBannerView {
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:_cmd object:nil];
-    
     if (self.itemCount > 1 && self.collectionView.visibleCells.count > 0) {
-        CGFloat offestY = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.bounds);
+//        CGFloat offestY = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.bounds);
+        CGFloat offestY = CGRectGetWidth(self.collectionView.bounds) * (_realIndex + 1);
         [self.collectionView setContentOffset:CGPointMake(offestY, 0) animated:YES];
-        
         if (_autoScrolling) {
             [self performSelector:_cmd withObject:nil afterDelay:self.scrollInterval];
         }
