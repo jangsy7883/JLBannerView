@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TLD-BO-4r5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="A8Y-Eh-EdZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,21 +10,21 @@
     </dependencies>
     <scenes>
         <!--Collection View Controller-->
-        <scene sceneID="vXl-RH-s16">
+        <scene sceneID="LJJ-l8-P5X">
             <objects>
-                <collectionViewController id="5iE-sF-FLi" customClass="CollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="YzO-wI-dXP">
+                <collectionViewController id="GKn-Gi-2R2" customClass="CollectionViewController" customModule="JLBannerViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" id="9DO-eV-Tqv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U64-Bj-MbB">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BAA-sQ-d4H">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="CmI-uv-N5G">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="fmq-CU-LYR">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -34,60 +34,62 @@
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="5iE-sF-FLi" id="F9E-vm-Le7"/>
-                            <outlet property="delegate" destination="5iE-sF-FLi" id="Jgd-oy-WQm"/>
+                            <outlet property="dataSource" destination="GKn-Gi-2R2" id="7Zr-YI-Kmu"/>
+                            <outlet property="delegate" destination="GKn-Gi-2R2" id="f8q-Ug-qbP"/>
                         </connections>
                     </collectionView>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M4v-Tc-qtj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vn0-vN-kBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="727" y="557"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="h2Y-3V-sGl">
+        <scene sceneID="G1O-Uu-xPb">
             <objects>
-                <navigationController id="TLD-BO-4r5" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fz8-kr-yOA">
+                <navigationController id="A8Y-Eh-EdZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YkS-5Z-S9d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="P6p-gD-wah" kind="relationship" relationship="rootViewController" id="BaZ-PT-3PJ"/>
+                        <segue destination="cfg-sq-M0p" kind="relationship" relationship="rootViewController" id="3PN-5E-qEH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tg2-Fg-9lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzA-wp-mOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-951" y="559"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="nQk-lJ-1gs">
+        <scene sceneID="Im6-f2-Tac">
             <objects>
-                <viewController id="P6p-gD-wah" sceneMemberID="viewController">
+                <viewController id="cfg-sq-M0p" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1Td-KA-8N7"/>
-                        <viewControllerLayoutGuide type="bottom" id="IF1-eu-Yhw"/>
+                        <viewControllerLayoutGuide type="top" id="Hsu-qt-W8g"/>
+                        <viewControllerLayoutGuide type="bottom" id="weA-CY-7XH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Cfb-17-xN2">
+                    <view key="view" contentMode="scaleToFill" id="2La-cT-ktx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0h0-oW-8Ao">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8M-z7-Sdc">
                                 <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="5iE-sF-FLi" kind="show" id="uLu-mB-PMf"/>
+                                    <segue destination="GKn-Gi-2R2" kind="show" id="SuQ-uq-Q2K">
+                                        <nil key="action"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0h0-oW-8Ao" firstAttribute="centerY" secondItem="Cfb-17-xN2" secondAttribute="centerY" id="ZRd-iV-QbE"/>
-                            <constraint firstItem="0h0-oW-8Ao" firstAttribute="centerX" secondItem="Cfb-17-xN2" secondAttribute="centerX" id="rpm-tC-gij"/>
+                            <constraint firstItem="b8M-z7-Sdc" firstAttribute="centerX" secondItem="2La-cT-ktx" secondAttribute="centerX" id="1qn-7h-gWY"/>
+                            <constraint firstItem="b8M-z7-Sdc" firstAttribute="centerY" secondItem="2La-cT-ktx" secondAttribute="centerY" id="itw-fP-WXA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cqL-Gi-hCJ"/>
+                    <navigationItem key="navigationItem" id="4SG-xm-R9w"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sfz-Be-bh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFB-C9-RDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-103" y="558"/>
         </scene>
