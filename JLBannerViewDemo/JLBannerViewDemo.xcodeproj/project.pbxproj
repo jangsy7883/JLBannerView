@@ -7,38 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EFD149821EB044A100CEE14A /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD149811EB044A100CEE14A /* CollectionViewController.m */; };
-		EFD149851EB044B000CEE14A /* CastBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD149841EB044B000CEE14A /* CastBannerCell.m */; };
-		EFFE13A81E9F7E4900FC8D65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13A71E9F7E4900FC8D65 /* main.m */; };
-		EFFE13AB1E9F7E4900FC8D65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13AA1E9F7E4900FC8D65 /* AppDelegate.m */; };
-		EFFE13B11E9F7E4900FC8D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13AF1E9F7E4900FC8D65 /* Main.storyboard */; };
-		EFFE13B31E9F7E4900FC8D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13B21E9F7E4900FC8D65 /* Assets.xcassets */; };
-		EFFE13B61E9F7E4900FC8D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13B41E9F7E4900FC8D65 /* LaunchScreen.storyboard */; };
-		EFFE13C01E9F7F4700FC8D65 /* JLBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFE13BF1E9F7F4700FC8D65 /* JLBannerView.m */; };
-		EFFE13C21EA0673A00FC8D65 /* JLBannerView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */; };
+		EFE42DC21ED67A3800F1A49E /* JLBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE42DC11ED67A3800F1A49E /* JLBannerView.m */; };
+		EFE42DC41ED67E0400F1A49E /* JLBannerView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EFE42DC31ED67E0400F1A49E /* JLBannerView.podspec */; };
+		EFF6C9361ED670C10016384A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6C9351ED670C10016384A /* AppDelegate.swift */; };
+		EFF6C93B1ED670C10016384A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF6C9391ED670C10016384A /* Main.storyboard */; };
+		EFF6C93D1ED670C10016384A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF6C93C1ED670C10016384A /* Assets.xcassets */; };
+		EFF6C9401ED670C10016384A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF6C93E1ED670C10016384A /* LaunchScreen.storyboard */; };
+		EFF6C9511ED671000016384A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6C94F1ED671000016384A /* CollectionViewController.swift */; };
+		EFF6C9521ED671000016384A /* CastBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF6C9501ED671000016384A /* CastBannerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A89716FA9D18A09C839040DC /* Pods_JLBannerViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLBannerViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFD149801EB044A100CEE14A /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		EFD149811EB044A100CEE14A /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		EFD149831EB044B000CEE14A /* CastBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastBannerCell.h; sourceTree = "<group>"; };
-		EFD149841EB044B000CEE14A /* CastBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastBannerCell.m; sourceTree = "<group>"; };
-		EFFE13A31E9F7E4900FC8D65 /* JLBannerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLBannerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFFE13A71E9F7E4900FC8D65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EFFE13A91E9F7E4900FC8D65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EFFE13AA1E9F7E4900FC8D65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EFFE13B01E9F7E4900FC8D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EFFE13B21E9F7E4900FC8D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EFFE13B51E9F7E4900FC8D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EFFE13B71E9F7E4900FC8D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFFE13BE1E9F7F4700FC8D65 /* JLBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBannerView.h; sourceTree = "<group>"; };
-		EFFE13BF1E9F7F4700FC8D65 /* JLBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBannerView.m; sourceTree = "<group>"; };
-		EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JLBannerView.podspec; path = ../JLBannerView.podspec; sourceTree = "<group>"; };
+		EFE42DC01ED67A3800F1A49E /* JLBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBannerView.h; sourceTree = "<group>"; };
+		EFE42DC11ED67A3800F1A49E /* JLBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBannerView.m; sourceTree = "<group>"; };
+		EFE42DC31ED67E0400F1A49E /* JLBannerView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JLBannerView.podspec; path = ../JLBannerView.podspec; sourceTree = "<group>"; };
+		EFF6C9321ED670C10016384A /* JLBannerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLBannerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF6C9351ED670C10016384A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFF6C93A1ED670C10016384A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFF6C93C1ED670C10016384A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFF6C93F1ED670C10016384A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFF6C9411ED670C10016384A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF6C9471ED670D10016384A /* JLBannerViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLBannerViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFF6C94F1ED671000016384A /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EFF6C9501ED671000016384A /* CastBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastBannerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EFFE13A01E9F7E4900FC8D65 /* Frameworks */ = {
+		EFF6C92F1ED670C10016384A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,79 +43,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5FC0BAC61EAEF0259A58BEA9 /* Frameworks */ = {
+		EFE42DBF1ED67A3800F1A49E /* JLBannerView */ = {
 			isa = PBXGroup;
 			children = (
-				A89716FA9D18A09C839040DC /* Pods_JLBannerViewDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EFFE139A1E9F7E4900FC8D65 = {
-			isa = PBXGroup;
-			children = (
-				EFFE13C11EA0673A00FC8D65 /* JLBannerView.podspec */,
-				EFFE13BD1E9F7F4700FC8D65 /* JLBannerView */,
-				EFFE13A51E9F7E4900FC8D65 /* JLBannerViewDemo */,
-				EFFE13A41E9F7E4900FC8D65 /* Products */,
-				5FC0BAC61EAEF0259A58BEA9 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		EFFE13A41E9F7E4900FC8D65 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EFFE13A31E9F7E4900FC8D65 /* JLBannerViewDemo.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		EFFE13A51E9F7E4900FC8D65 /* JLBannerViewDemo */ = {
-			isa = PBXGroup;
-			children = (
-				EFFE13A91E9F7E4900FC8D65 /* AppDelegate.h */,
-				EFFE13AA1E9F7E4900FC8D65 /* AppDelegate.m */,
-				EFD149801EB044A100CEE14A /* CollectionViewController.h */,
-				EFD149811EB044A100CEE14A /* CollectionViewController.m */,
-				EFD149831EB044B000CEE14A /* CastBannerCell.h */,
-				EFD149841EB044B000CEE14A /* CastBannerCell.m */,
-				EFFE13AF1E9F7E4900FC8D65 /* Main.storyboard */,
-				EFFE13B21E9F7E4900FC8D65 /* Assets.xcassets */,
-				EFFE13B41E9F7E4900FC8D65 /* LaunchScreen.storyboard */,
-				EFFE13B71E9F7E4900FC8D65 /* Info.plist */,
-				EFFE13A61E9F7E4900FC8D65 /* Supporting Files */,
-			);
-			path = JLBannerViewDemo;
-			sourceTree = "<group>";
-		};
-		EFFE13A61E9F7E4900FC8D65 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EFFE13A71E9F7E4900FC8D65 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EFFE13BD1E9F7F4700FC8D65 /* JLBannerView */ = {
-			isa = PBXGroup;
-			children = (
-				EFFE13BE1E9F7F4700FC8D65 /* JLBannerView.h */,
-				EFFE13BF1E9F7F4700FC8D65 /* JLBannerView.m */,
+				EFE42DC01ED67A3800F1A49E /* JLBannerView.h */,
+				EFE42DC11ED67A3800F1A49E /* JLBannerView.m */,
 			);
 			name = JLBannerView;
 			path = ../JLBannerView;
 			sourceTree = "<group>";
 		};
+		EFF6C9291ED670C10016384A = {
+			isa = PBXGroup;
+			children = (
+				EFE42DC31ED67E0400F1A49E /* JLBannerView.podspec */,
+				EFE42DBF1ED67A3800F1A49E /* JLBannerView */,
+				EFF6C9341ED670C10016384A /* JLBannerViewDemo */,
+				EFF6C9331ED670C10016384A /* Products */,
+				EFF6C9471ED670D10016384A /* JLBannerViewDemo-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		EFF6C9331ED670C10016384A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFF6C9321ED670C10016384A /* JLBannerViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFF6C9341ED670C10016384A /* JLBannerViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EFF6C9351ED670C10016384A /* AppDelegate.swift */,
+				EFF6C94F1ED671000016384A /* CollectionViewController.swift */,
+				EFF6C9501ED671000016384A /* CastBannerCell.swift */,
+				EFF6C9391ED670C10016384A /* Main.storyboard */,
+				EFF6C93C1ED670C10016384A /* Assets.xcassets */,
+				EFF6C93E1ED670C10016384A /* LaunchScreen.storyboard */,
+				EFF6C9411ED670C10016384A /* Info.plist */,
+			);
+			path = JLBannerViewDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EFFE13A21E9F7E4900FC8D65 /* JLBannerViewDemo */ = {
+		EFF6C9311ED670C10016384A /* JLBannerViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFFE13BA1E9F7E4900FC8D65 /* Build configuration list for PBXNativeTarget "JLBannerViewDemo" */;
+			buildConfigurationList = EFF6C9441ED670C10016384A /* Build configuration list for PBXNativeTarget "JLBannerViewDemo" */;
 			buildPhases = (
-				EFFE139F1E9F7E4900FC8D65 /* Sources */,
-				EFFE13A01E9F7E4900FC8D65 /* Frameworks */,
-				EFFE13A11E9F7E4900FC8D65 /* Resources */,
+				EFF6C92E1ED670C10016384A /* Sources */,
+				EFF6C92F1ED670C10016384A /* Frameworks */,
+				EFF6C9301ED670C10016384A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -128,26 +103,28 @@
 			);
 			name = JLBannerViewDemo;
 			productName = JLBannerViewDemo;
-			productReference = EFFE13A31E9F7E4900FC8D65 /* JLBannerViewDemo.app */;
+			productReference = EFF6C9321ED670C10016384A /* JLBannerViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EFFE139B1E9F7E4900FC8D65 /* Project object */ = {
+		EFF6C92A1ED670C10016384A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = Studio;
+				ORGANIZATIONNAME = Woody;
 				TargetAttributes = {
-					EFFE13A21E9F7E4900FC8D65 = {
-						CreatedOnToolsVersion = 8.3.1;
+					EFF6C9311ED670C10016384A = {
+						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = SCHCN3R38K;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = EFFE139E1E9F7E4900FC8D65 /* Build configuration list for PBXProject "JLBannerViewDemo" */;
+			buildConfigurationList = EFF6C92D1ED670C10016384A /* Build configuration list for PBXProject "JLBannerViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -155,58 +132,57 @@
 				en,
 				Base,
 			);
-			mainGroup = EFFE139A1E9F7E4900FC8D65;
-			productRefGroup = EFFE13A41E9F7E4900FC8D65 /* Products */;
+			mainGroup = EFF6C9291ED670C10016384A;
+			productRefGroup = EFF6C9331ED670C10016384A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EFFE13A21E9F7E4900FC8D65 /* JLBannerViewDemo */,
+				EFF6C9311ED670C10016384A /* JLBannerViewDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EFFE13A11E9F7E4900FC8D65 /* Resources */ = {
+		EFF6C9301ED670C10016384A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFFE13B61E9F7E4900FC8D65 /* LaunchScreen.storyboard in Resources */,
-				EFFE13B31E9F7E4900FC8D65 /* Assets.xcassets in Resources */,
-				EFFE13B11E9F7E4900FC8D65 /* Main.storyboard in Resources */,
-				EFFE13C21EA0673A00FC8D65 /* JLBannerView.podspec in Resources */,
+				EFF6C9401ED670C10016384A /* LaunchScreen.storyboard in Resources */,
+				EFF6C93D1ED670C10016384A /* Assets.xcassets in Resources */,
+				EFF6C93B1ED670C10016384A /* Main.storyboard in Resources */,
+				EFE42DC41ED67E0400F1A49E /* JLBannerView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EFFE139F1E9F7E4900FC8D65 /* Sources */ = {
+		EFF6C92E1ED670C10016384A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD149851EB044B000CEE14A /* CastBannerCell.m in Sources */,
-				EFFE13C01E9F7F4700FC8D65 /* JLBannerView.m in Sources */,
-				EFFE13AB1E9F7E4900FC8D65 /* AppDelegate.m in Sources */,
-				EFD149821EB044A100CEE14A /* CollectionViewController.m in Sources */,
-				EFFE13A81E9F7E4900FC8D65 /* main.m in Sources */,
+				EFE42DC21ED67A3800F1A49E /* JLBannerView.m in Sources */,
+				EFF6C9511ED671000016384A /* CollectionViewController.swift in Sources */,
+				EFF6C9521ED671000016384A /* CastBannerCell.swift in Sources */,
+				EFF6C9361ED670C10016384A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EFFE13AF1E9F7E4900FC8D65 /* Main.storyboard */ = {
+		EFF6C9391ED670C10016384A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EFFE13B01E9F7E4900FC8D65 /* Base */,
+				EFF6C93A1ED670C10016384A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EFFE13B41E9F7E4900FC8D65 /* LaunchScreen.storyboard */ = {
+		EFF6C93E1ED670C10016384A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EFFE13B51E9F7E4900FC8D65 /* Base */,
+				EFF6C93F1ED670C10016384A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -214,7 +190,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EFFE13B81E9F7E4900FC8D65 /* Debug */ = {
+		EFF6C9421ED670C10016384A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,10 +235,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		EFFE13B91E9F7E4900FC8D65 /* Release */ = {
+		EFF6C9431ED670C10016384A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,58 +278,64 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		EFFE13BB1E9F7E4900FC8D65 /* Debug */ = {
+		EFF6C9451ED670C10016384A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SCHCN3R38K;
 				INFOPLIST_FILE = JLBannerViewDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jangsy7883.JLBannerViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = JLSeries.JLBannerViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JLBannerViewDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		EFFE13BC1E9F7E4900FC8D65 /* Release */ = {
+		EFF6C9461ED670C10016384A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SCHCN3R38K;
 				INFOPLIST_FILE = JLBannerViewDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jangsy7883.JLBannerViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = JLSeries.JLBannerViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JLBannerViewDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EFFE139E1E9F7E4900FC8D65 /* Build configuration list for PBXProject "JLBannerViewDemo" */ = {
+		EFF6C92D1ED670C10016384A /* Build configuration list for PBXProject "JLBannerViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFFE13B81E9F7E4900FC8D65 /* Debug */,
-				EFFE13B91E9F7E4900FC8D65 /* Release */,
+				EFF6C9421ED670C10016384A /* Debug */,
+				EFF6C9431ED670C10016384A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EFFE13BA1E9F7E4900FC8D65 /* Build configuration list for PBXNativeTarget "JLBannerViewDemo" */ = {
+		EFF6C9441ED670C10016384A /* Build configuration list for PBXNativeTarget "JLBannerViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EFFE13BB1E9F7E4900FC8D65 /* Debug */,
-				EFFE13BC1E9F7E4900FC8D65 /* Release */,
+				EFF6C9451ED670C10016384A /* Debug */,
+				EFF6C9461ED670C10016384A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EFFE139B1E9F7E4900FC8D65 /* Project object */;
+	rootObject = EFF6C92A1ED670C10016384A /* Project object */;
 }

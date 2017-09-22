@@ -78,7 +78,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     }
     else {
         if (!CGRectEqualToRect(self.collectionView.frame, self.bounds) ) {
-            self.collectionView.frame = self.bounds;
+            self.collectionView.frame = CGRectMake(0, 0, floor(CGRectGetWidth(self.bounds)), floor(CGRectGetHeight(self.bounds)));
             [self.collectionView reloadData];
             [self layoutContentOffset];
         }
@@ -130,7 +130,6 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
                 [self performSelector:@selector(autoScrollBannerView) withObject:nil afterDelay:self.scrollInterval];
             }
         }
-        
         [self scrollViewDidScroll:self.collectionView];
     }
 }
@@ -171,6 +170,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 #pragma mark - scrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSInteger index = 0;
     if (self.shouldLoop && self.itemCount > 1) {
         if (FLT_MIN == _lastContentOffsetX) {
             _lastContentOffsetX = scrollView.contentOffset.x;
@@ -195,15 +195,23 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
         //PAGE CONTROL
         _realIndex = lround(_lastContentOffsetX/pageWidth);
         
-        NSInteger index = MAX(0, lround(_lastContentOffsetX/pageWidth)-1);
-        if (_currentIndex != index) {
-            
-            _currentIndex = index;
-            self.pageControl.currentPage = index;
-            
-            if ([self.delegate respondsToSelector:@selector(bannerView:didScrollToIndex:)]) {
-                [self.delegate bannerView:self didScrollToIndex:index];
-            }
+        index = MAX(0, lround(_lastContentOffsetX/pageWidth)-1);
+    }
+    else{
+        CGPoint contentOffset = scrollView.contentOffset;
+        CGFloat pageWidth = CGRectGetWidth(scrollView.bounds);
+        
+        _realIndex = lround(contentOffset.x/pageWidth);
+        
+        index = MAX(0, lround(contentOffset.x/pageWidth));
+    }
+    
+    if (_currentIndex != index) {
+        _currentIndex = index;
+        self.pageControl.currentPage = index;
+        
+        if ([self.delegate respondsToSelector:@selector(bannerView:didScrollToIndex:)]) {
+            [self.delegate bannerView:self didScrollToIndex:index];
         }
     }
 }
@@ -241,7 +249,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 - (void)autoScrollBannerView {
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:_cmd object:nil];
     if (self.itemCount > 1 && self.collectionView.visibleCells.count > 0) {
-//        CGFloat offestY = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.bounds);
+        //        CGFloat offestY = self.collectionView.contentOffset.x + CGRectGetWidth(self.collectionView.bounds);
         CGFloat offestY = CGRectGetWidth(self.collectionView.bounds) * (_realIndex + 1);
         [self.collectionView setContentOffset:CGPointMake(offestY, 0) animated:YES];
         if (_autoScrolling) {
@@ -360,3 +368,4 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
 }
 
 @end
+
