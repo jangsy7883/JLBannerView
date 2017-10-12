@@ -78,7 +78,7 @@ static NSString *BannerCellReuseIdentifier = @"bannerCell";
     }
     else {
         if (!CGRectEqualToRect(self.collectionView.frame, self.bounds) ) {
-            self.collectionView.frame = CGRectMake(0, 0, floor(CGRectGetWidth(self.bounds)), floor(CGRectGetHeight(self.bounds)));
+            self.collectionView.frame = CGRectMake(0, 0, round(CGRectGetWidth(self.bounds)), round(CGRectGetHeight(self.bounds)));
             [self.collectionView reloadData];
             [self layoutContentOffset];
         }
